@@ -1,5 +1,5 @@
 import { model, Schema } from 'mongoose'
-import TTourModel, { ITour, ITourMethods } from './tour.interface'
+import { ITour, ITourMethods, TTourModel } from './tour.interface'
 
 const tourSchema = new Schema<ITour, TTourModel, ITourMethods>({
   name: {
@@ -24,29 +24,11 @@ const tourSchema = new Schema<ITour, TTourModel, ITourMethods>({
   startLocation: { type: String },
   locations: [String],
   slug: String,
+  availableSeats: {
+    type: Number,
+    required: [true, 'Please tell us your availableSeats'],
+  },
 })
-
-// StaticRange, instance
-
-// tourSchema.methods.getNextNearestStartDateAndEndData = function () {
-//   const today = new Date()
-
-//   const futureDates = this.startDates.filter((startDate: Date) => {
-//     return startDate > today
-//   })
-
-//   futureDates.sort((a: Date, b: Date) => a.getTime() - b.getDate())
-
-//   const nearestStartDate = futureDates[0]
-//   const estimatedEndDate = new Date(
-//     nearestStartDate.getTime() + this.durationHours * 60 * 60 * 1000
-//   )
-
-//   return {
-//     nearestStartDate,
-//     estimatedEndDate,
-//   }
-// }
 
 tourSchema.static(
   'getNextNearestStartDateAndEndData',

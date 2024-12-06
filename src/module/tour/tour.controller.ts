@@ -48,6 +48,7 @@ const updateTour = catchAsync(
   async (req: Request, res: Response) => {
  
       const id = req.params.id
+      // console.log(id)
       const body = req.body
       const result = await tourService.updateTour(id, body)
 
@@ -58,6 +59,8 @@ const updateTour = catchAsync(
         }) 
   }
 )
+
+
 const deleteTour = catchAsync(
   async (req: Request, res: Response) => {
 
@@ -72,6 +75,7 @@ const deleteTour = catchAsync(
       
   }
 )
+
 const getNextSchedule = catchAsync(
   async (req: Request, res: Response) => {
 

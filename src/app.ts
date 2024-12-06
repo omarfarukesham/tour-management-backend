@@ -1,7 +1,9 @@
 import express, { Request, Response } from 'express'
+import { StatusCodes } from 'http-status-codes'
+
 import userRouter from './module/user/user.router'
 import tourRouter from './module/tour/tour.route'
-import { StatusCodes } from 'http-status-codes'
+import { bookingRouter } from './module/booking/booking.route'
 
 const app = express()
 
@@ -10,6 +12,7 @@ app.use(express.json())
 
 app.use('/api/user', userRouter)
 app.use('/api/tour', tourRouter)
+app.use('/api/booking', bookingRouter)
 
 // POST: /api/user/create-user
 

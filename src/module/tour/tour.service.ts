@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { ITour } from './tour.interface'
 import Tour from './tour.model'
 
@@ -23,6 +24,7 @@ const getSingleTour = async (id: string) => {
 }
 
 const updateTour = async (id: string, payload: Partial<ITour>) => {
+  // console.log(payload)
   const result = Tour.findByIdAndUpdate(id, payload)
   return result
 }
@@ -32,7 +34,7 @@ const deleteTour = async (id: string) => {
   return result
 }
 
-const getNextSchedule = async (id: string) => {
+const getNextSchedule = async (_id: string) => {
   const tour = await Tour.getNextNearestStartDateAndEndData()
   //   const nextSchedule = tour?.getNextNearestStartDateAndEndData()
 
