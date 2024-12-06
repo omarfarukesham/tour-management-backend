@@ -10,6 +10,7 @@ const bookingSchema = new Schema<IBooking>({
         type: Schema.Types.ObjectId,
         ref: 'Tour',
     },
+    
     bookedSlots: {
         type: Number,
         required: [true, 'A booking must have bookedSlots'],

@@ -11,6 +11,7 @@ export interface ITour {
   startLocation: string
   locations: string[]
   slug: string
+  availableSeats: number
 }
 
 export interface ITourMethods {
@@ -20,7 +21,7 @@ export interface ITourMethods {
   }
 }
 
-interface TTourModel
+export interface TTourModel
   extends Model<ITour, Record<string, unknown>, ITourMethods> {
   startDates: Date[]
   durationHours: number
@@ -28,5 +29,3 @@ interface TTourModel
     HydratedDocument<ITour, ITourMethods>
   >
 }
-
-export default TTourModel
