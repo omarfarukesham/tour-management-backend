@@ -41,32 +41,34 @@ A scalable, secure, and efficient backend built with **Node.js**, **Express.js**
 ## 🗂️ Project Structure
 
 \`\`\`
+
 ├── src
-│   ├── modules         # Feature-based modules (e.g., user, tour, booking)
+│   ├── modules       
 │   │   ├── user
-│   │   │   ├── user.controller.ts      # User-related request handlers
-│   │   │   ├── user.service.ts         # Business logic for users
-│   │   │   ├── user.model.ts           # Mongoose schema for users
-│   │   │   └── user.routes.ts          # User-related routes
+│   │   │   ├── user.controller.ts     
+│   │   │   ├── user.service.ts       
+│   │   │   ├── user.model.ts         
+│   │   │   └── user.routes.ts        
 │   │   ├── tour
-│   │   │   ├── tour.controller.ts      # Tour-related request handlers
-│   │   │   ├── tour.service.ts         # Business logic for tours
-│   │   │   ├── tour.model.ts           # Mongoose schema for tours
-│   │   │   └── tour.routes.ts          # Tour-related routes
+│   │   │   ├── tour.controller.ts     
+│   │   │   ├── tour.service.ts        
+│   │   │   ├── tour.model.ts          
+│   │   │   └── tour.routes.ts         
 │   │   ├── booking
-│   │   │   ├── booking.controller.ts   # Booking-related request handlers
-│   │   │   ├── booking.service.ts      # Business logic for bookings
-│   │   │   ├── booking.model.ts        # Mongoose schema for bookings
-│   │   │   └── booking.routes.ts       # Booking-related routes
-│   ├── config          # Configuration files (e.g., database, environment)
-│   ├── middlewares     # Custom middleware (auth, validation, etc.)
-│   ├── utils           # Helper functions and utilities
-│   ├── app.ts          # Express application setup
-│   └── index.ts        # Entry point of the application
-├── .env                # Environment variables
-├── tsconfig.json       # TypeScript configuration
-├── package.json        # Dependencies and scripts
-└── README.md           # Project documentation
+│   │   │   ├── booking.controller.ts  
+│   │   │   ├── booking.service.ts      
+│   │   │   ├── booking.model.ts       
+│   │   │   └── booking.routes.ts      
+│   ├── config         
+│   ├── middlewares    
+│   ├── utils           
+│   ├── app.ts          
+│   └── index.ts       
+├── .env                
+├── tsconfig.json       
+├── package.json       
+└── README.md         
+
 \`\`\`
 
 
@@ -164,9 +166,6 @@ npm run test
 
 ---
 
-## 📄 License
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
-
 ---
 
 ## 📬 Contact
@@ -174,4 +173,7 @@ For questions or feedback, feel free to reach out:
 - **Email**: [your-email@example.com](mailto:omar.lu86@gmail.com)
 - **GitHub**: [https://github.com/your-username](https://github.com/omarfarukesham)
 
-EOL
+
+## 📄 License
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
+
