@@ -41,7 +41,6 @@ A scalable, secure, and efficient backend built with **Node.js**, **Express.js**
 ## 🗂️ Project Structure
 
 \`\`\`
-
 ├── src
 │   ├── modules       
 │   │   ├── user
@@ -68,7 +67,6 @@ A scalable, secure, and efficient backend built with **Node.js**, **Express.js**
 ├── tsconfig.json       
 ├── package.json       
 └── README.md         
-
 \`\`\`
 
 
